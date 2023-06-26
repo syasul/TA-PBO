@@ -13,11 +13,12 @@ import java.sql.SQLException;
  * @author User
  */
 public class Koneksi {
-     static Connection koneksi;
+    static Connection koneksi;
+    
     public static Connection connection() {
         if (koneksi == null) {
             MysqlDataSource data = new MysqlDataSource();
-            data.setDatabaseName("db_perpus");
+            data.setDatabaseName("perpus");
             data.setUser("root");
             data.setPassword("");
             try {
